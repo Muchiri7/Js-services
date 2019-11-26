@@ -5,14 +5,14 @@
  * - Only add or edit code in areas marked with ✏️
  */
 
-describe("arrays", function() {
+describe("arrays", function () {
     "use strict";
 
-    describe("Number of items in an array", function() {
-        it("should run without errors", function() {
+    describe("Number of items in an array", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            const a = [];
             ////////////////////////////////////////////////////////////////////
 
             expect(getNumberOfItems([])).to.equal(0);
@@ -22,13 +22,13 @@ describe("arrays", function() {
         });
     });
 
-    describe("Remove last item", function() {
-        it("should run without errors", function() {
+    describe("Remove last item", function () {
+        it("should run without errors", function () {
             const array = ["a", "b", "c", "d"];
 
             ////////////////////////////////////////////////////////////////////
-            // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOP
+            const popped = array.pop();
             ////////////////////////////////////////////////////////////////////
 
             expect(removeLastItem()).to.equal("d");
@@ -38,12 +38,13 @@ describe("arrays", function() {
         });
     });
 
-    describe("Append item", function() {
-        it("should run without errors", function() {
+    describe("Append item", function () {
+        it("should run without errors", function () {
             const array = [];
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
+            
 
             ////////////////////////////////////////////////////////////////////
 
@@ -54,8 +55,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Append multiple items", function() {
-        it("should run without errors", function() {
+    describe("Append multiple items", function () {
+        it("should run without errors", function () {
             const array = [];
 
             ////////////////////////////////////////////////////////////////////
@@ -70,8 +71,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Remove first item", function() {
-        it("should run without errors", function() {
+    describe("Remove first item", function () {
+        it("should run without errors", function () {
             const array = ["a", "b", "c", "d"];
 
             ////////////////////////////////////////////////////////////////////
@@ -86,8 +87,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Prepend multiple items", function() {
-        it("should run without errors", function() {
+    describe("Prepend multiple items", function () {
+        it("should run without errors", function () {
             const array = ["x"];
 
             ////////////////////////////////////////////////////////////////////
@@ -102,8 +103,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Add items at a certain position", function() {
-        it("should run without errors", function() {
+    describe("Add items at a certain position", function () {
+        it("should run without errors", function () {
             const array = ["x", "y"];
 
             ////////////////////////////////////////////////////////////////////
@@ -119,8 +120,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Overwrite items at a certain position", function() {
-        it("should run without errors", function() {
+    describe("Overwrite items at a certain position", function () {
+        it("should run without errors", function () {
             const array = ["x", "y"];
 
             ////////////////////////////////////////////////////////////////////
@@ -136,8 +137,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Reverse the order of the array", function() {
-        it("should run without errors", function() {
+    describe("Reverse the order of the array", function () {
+        it("should run without errors", function () {
             const array = ["a", "b", "c"];
 
             ////////////////////////////////////////////////////////////////////
@@ -152,8 +153,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Sort strings", function() {
-        it("should run without errors", function() {
+    describe("Sort strings", function () {
+        it("should run without errors", function () {
             const array = ["c", "a", "b"];
 
             ////////////////////////////////////////////////////////////////////
@@ -166,8 +167,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Sort strings by length", function() {
-        it("should run without errors", function() {
+    describe("Sort strings by length", function () {
+        it("should run without errors", function () {
             const array = ["aaa", "c", "bb"];
 
             ////////////////////////////////////////////////////////////////////
@@ -180,8 +181,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Create a copy of an array", function() {
-        it("should run without errors", function() {
+    describe("Create a copy of an array", function () {
+        it("should run without errors", function () {
             const array1 = ["a", "b", "c"];
             const array2 = ["x", "y"];
 
@@ -200,8 +201,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Sort an array without mutating it", function() {
-        it("should run without errors", function() {
+    describe("Sort an array without mutating it", function () {
+        it("should run without errors", function () {
             const array = [3, 1, 2];
 
             ////////////////////////////////////////////////////////////////////
@@ -222,8 +223,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Create a slice of an array", function() {
-        it("should run without errors", function() {
+    describe("Create a slice of an array", function () {
+        it("should run without errors", function () {
             const array = ["a", "b", "c", "d", "e", "f"];
 
             ////////////////////////////////////////////////////////////////////
@@ -239,8 +240,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Get the index of the first occurrence", function() {
-        it("should run without errors", function() {
+    describe("Get the index of the first occurrence", function () {
+        it("should run without errors", function () {
             const array = ["a", "b", "a", "b", "a"];
 
             ////////////////////////////////////////////////////////////////////
@@ -254,8 +255,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Get the index of the last occurrence", function() {
-        it("should run without errors", function() {
+    describe("Get the index of the last occurrence", function () {
+        it("should run without errors", function () {
             const array = ["a", "b", "a", "b", "a"];
 
             ////////////////////////////////////////////////////////////////////
@@ -269,8 +270,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Array contains item", function() {
-        it("should run without errors", function() {
+    describe("Array contains item", function () {
+        it("should run without errors", function () {
             const array = ["a", "b"];
 
             ////////////////////////////////////////////////////////////////////
@@ -284,8 +285,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Combine multiple arrays", function() {
-        it("should run without errors", function() {
+    describe("Combine multiple arrays", function () {
+        it("should run without errors", function () {
             const array = ["a"];
 
             ////////////////////////////////////////////////////////////////////
@@ -308,8 +309,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Exclude numbers below a certain limit", function() {
-        it("should run without errors", function() {
+    describe("Exclude numbers below a certain limit", function () {
+        it("should run without errors", function () {
             const numbers = [1, 2, 3, 4, 5];
 
             ////////////////////////////////////////////////////////////////////
@@ -326,8 +327,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Are all numbers greater than a certain limit?", function() {
-        it("should run without errors", function() {
+    describe("Are all numbers greater than a certain limit?", function () {
+        it("should run without errors", function () {
             const numbers = [1, 2, 3, 4, 5];
 
             ////////////////////////////////////////////////////////////////////
@@ -344,8 +345,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Is one number below a certain limit?", function() {
-        it("should run without errors", function() {
+    describe("Is one number below a certain limit?", function () {
+        it("should run without errors", function () {
             const numbers = [1, 2, 3, 4, 5];
 
             ////////////////////////////////////////////////////////////////////
@@ -362,44 +363,57 @@ describe("arrays", function() {
         });
     });
 
-    describe("Pick user names", function() {
-        it("should run without errors", function() {
+    describe("Pick user names", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
 
             ////////////////////////////////////////////////////////////////////
 
             expect(pickUserNames([])).to.eql([]);
-            expect(pickUserNames([{ name: "Bob" }, { name: "Alice" }])).to.eql([
+            expect(pickUserNames([{
+                name: "Bob"
+            }, {
+                name: "Alice"
+            }])).to.eql([
                 "Bob",
                 "Alice"
             ]);
         });
     });
 
-    describe("Pick dynamic key", function() {
-        it("should run without errors", function() {
+    describe("Pick dynamic key", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
 
             ////////////////////////////////////////////////////////////////////
 
             expect(pick("something", [])).to.eql([]);
-            expect(pick("name", [{ name: "Bob" }, { name: "Alice" }])).to.eql([
+            expect(pick("name", [{
+                name: "Bob"
+            }, {
+                name: "Alice"
+            }])).to.eql([
                 "Bob",
                 "Alice"
             ]);
             expect(
-                pick("age", [
-                    { name: "Bob", age: 20 },
-                    { name: "Alice", age: 21 }
+                pick("age", [{
+                        name: "Bob",
+                        age: 20
+                    },
+                    {
+                        name: "Alice",
+                        age: 21
+                    }
                 ])
             ).to.eql([20, 21]);
         });
     });
 
-    describe("Get user names below a certain age", function() {
-        it("should run without errors", function() {
+    describe("Get user names below a certain age", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // You will need to chain multiple array methods here.
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
@@ -408,16 +422,21 @@ describe("arrays", function() {
 
             expect(getUserNamesBelow18([])).to.eql([]);
             expect(
-                getUserNamesBelow18([
-                    { name: "Bob", age: 17 },
-                    { name: "Alice", age: 21 }
+                getUserNamesBelow18([{
+                        name: "Bob",
+                        age: 17
+                    },
+                    {
+                        name: "Alice",
+                        age: 21
+                    }
                 ])
             ).to.eql(["Bob"]);
         });
     });
 
-    describe("Sum up numbers", function() {
-        it("should run without errors", function() {
+    describe("Sum up numbers", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
 
@@ -429,8 +448,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Sum up numbers above a certain limit", function() {
-        it("should run without errors", function() {
+    describe("Sum up numbers above a certain limit", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // You will need to chain multiple array methods here.
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
@@ -444,8 +463,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Create array with a specific length", function() {
-        it("should run without errors", function() {
+    describe("Create array with a specific length", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
 
@@ -457,8 +476,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Create array with certain items", function() {
-        it("should run without errors", function() {
+    describe("Create array with certain items", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // This function does not work as intended. Can you fix it?
             // 🐛🛠 FIX THE BUG 🛠🐛
@@ -472,8 +491,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Create an array from an array-like thing", function() {
-        it("should run without errors", function() {
+    describe("Create an array from an array-like thing", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
 
@@ -497,8 +516,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Turn a string into an array", function() {
-        it("should run without errors", function() {
+    describe("Turn a string into an array", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
 
@@ -519,8 +538,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Turn an array into a string", function() {
-        it("should run without errors", function() {
+    describe("Turn an array into a string", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
 
@@ -536,8 +555,8 @@ describe("arrays", function() {
         });
     });
 
-    describe("Turn an array into a readable string", function() {
-        it("should run without errors", function() {
+    describe("Turn an array into a readable string", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // You will need to call several different array methods here.
             // Don't worry, you've already learned them.
