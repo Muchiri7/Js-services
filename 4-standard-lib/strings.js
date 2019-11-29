@@ -5,16 +5,19 @@
  * - Only add or edit code in areas marked with ✏️
  */
 
-describe("strings", function() {
+describe("strings", function () {
     "use strict";
 
-    describe("Find index of string partial", function() {
-        it("should run without errors", function() {
+    describe("Find index of string partial", function () {
+        it("should run without errors", function () {
             const text = "The quick brown fox jumps over the lazy dog";
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
 
+            function findIndexOf(string) {
+                return text.indexOf(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(findIndexOf("fox")).to.equal(16);
@@ -22,13 +25,15 @@ describe("strings", function() {
         });
     });
 
-    describe("Find last index of string partial", function() {
-        it("should run without errors", function() {
+    describe("Find last index of string partial", function () {
+        it("should run without errors", function () {
             const text = "The quick brown fox jumps over the lazy dog";
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function findLastIndexOf(string) {
+                return text.lastIndexOf(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(findLastIndexOf("e")).to.equal(33);
@@ -36,13 +41,15 @@ describe("strings", function() {
         });
     });
 
-    describe("Get letter at certain position in string", function() {
-        it("should run without errors", function() {
+    describe("Get letter at certain position in string", function () {
+        it("should run without errors", function () {
             const text = "The quick brown fox jumps over the lazy dog";
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function letterAt(string) {
+                return text.charAt(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(letterAt(0)).to.equal("T");
@@ -52,13 +59,16 @@ describe("strings", function() {
         });
     });
 
-    describe("Begins with substring", function() {
-        it("should run without errors", function() {
+    describe("Begins with substring", function () {
+        it("should run without errors", function () {
             const text = "The quick brown fox jumps over the lazy dog";
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
 
+            function beginsWith(string) {
+                return text.includes(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(beginsWith("The")).to.equal(true);
@@ -69,11 +79,15 @@ describe("strings", function() {
         });
     });
 
-    describe("Remove whitespace around string", function() {
-        it("should run without errors", function() {
+    describe("Remove whitespace around string", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
+            const text = "   example sentence   "
 
+            function removeWhitespaceAround(string) {
+                return text.trim(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(removeWhitespaceAround("   example sentence   ")).to.equal(
@@ -85,13 +99,16 @@ describe("strings", function() {
         });
     });
 
-    describe("String contains substring", function() {
-        it("should run without errors", function() {
+    describe("String contains substring", function () {
+        it("should run without errors", function () {
             const text = "The quick brown fox jumps over the lazy dog";
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
 
+            function contains(string) {
+                return text.includes(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(contains("quick")).to.equal(true);
@@ -103,13 +120,15 @@ describe("strings", function() {
         });
     });
 
-    describe("Get substring from string", function() {
-        it("should run without errors", function() {
+    describe("Get substring from string", function () {
+        it("should run without errors", function () {
             const text = "The quick brown fox jumps over the lazy dog";
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function cut(number, x) {
+                return text.slice(number, x);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(cut(0)).to.equal(
@@ -131,13 +150,16 @@ describe("strings", function() {
         });
     });
 
-    describe("Transform to capital letters", function() {
-        it("should run without errors", function() {
+    describe("Transform to capital letters", function () {
+        it("should run without errors", function () {
             const text = "The quick brown fox jumps over the lazy dog";
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
 
+            function transformToCapitalLetters(string) {
+                return text.toUpperCase(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(transformToCapitalLetters()).to.equal(

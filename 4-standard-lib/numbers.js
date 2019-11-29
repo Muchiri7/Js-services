@@ -5,14 +5,16 @@
  * - Only add or edit code in areas marked with ✏️
  */
 
-describe("numbers", function() {
+describe("numbers", function () {
     "use strict";
 
-    describe("Is finite number", function() {
-        it("should run without errors", function() {
+    describe("Is finite number", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function isFiniteNumber(number) {
+                return typeof number === "number" && Number.isFinite(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(isFiniteNumber(0)).to.equal(true);
@@ -28,12 +30,14 @@ describe("numbers", function() {
         });
     });
 
-    describe("Is not a number", function() {
-        it("should run without errors", function() {
+    describe("Is not a number", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
             // You will also need to do an additional check here.
-
+            function isNotANumber(number) {
+                return typeof number !== "number" || Number.isNaN(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(isNotANumber(0)).to.equal(false);
@@ -49,11 +53,13 @@ describe("numbers", function() {
         });
     });
 
-    describe("Round number (1/3)", function() {
-        it("should run without errors", function() {
+    describe("Round number (1/3)", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function roundNumber(number) {
+                return Math.round(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(roundNumber(0)).to.equal(0);
@@ -63,11 +69,14 @@ describe("numbers", function() {
         });
     });
 
-    describe("Round number (2/3)", function() {
-        it("should run without errors", function() {
+    describe("Round number (2/3)", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
 
+            function roundNumber(number) {
+                return Math.floor(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(roundNumber(0)).to.equal(0);
@@ -77,11 +86,13 @@ describe("numbers", function() {
         });
     });
 
-    describe("Round number (3/3)", function() {
-        it("should run without errors", function() {
+    describe("Round number (3/3)", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function roundNumber(number) {
+                return Math.ceil(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(roundNumber(0)).to.equal(0);
@@ -91,11 +102,13 @@ describe("numbers", function() {
         });
     });
 
-    describe("Get smallest number", function() {
-        it("should run without errors", function() {
+    describe("Get smallest number", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function getSmallestNumber(number) {
+                return Math.min(...number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(getSmallestNumber([-1])).to.equal(-1);
@@ -105,8 +118,8 @@ describe("numbers", function() {
         });
     });
 
-    describe("Get biggest number", function() {
-        it("should run without errors", function() {
+    describe("Get biggest number", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
 
@@ -119,8 +132,8 @@ describe("numbers", function() {
         });
     });
 
-    describe("Get random number between 0 and 1", function() {
-        it("should run without errors", function() {
+    describe("Get random number between 0 and 1", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
 
@@ -139,12 +152,14 @@ describe("numbers", function() {
         });
     });
 
-    describe("Get random number between 10 and 10.1", function() {
-        it("should run without errors", function() {
+    describe("Get random number between 10 and 10.1", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
             // You will also need to do some calculations here.
-
+            function getRandomNumberBetween10And10Point1() {
+                return Math.random() * 0.1 + 10;
+            }
             ////////////////////////////////////////////////////////////////////////
 
             const previousNumbers = [];
@@ -160,10 +175,11 @@ describe("numbers", function() {
         });
     });
 
-    describe("To integer", function() {
-        it("should run without errors", function() {
+    describe("To integer", function () {
+        it("should run without errors", function () {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
+
 
             ////////////////////////////////////////////////////////////////////////
 
